@@ -1,11 +1,10 @@
 #!/usr/bin/python
 
 # This Python script will ping a website and return the relevant HTTP status code.
-# It will then issue a command using the blink1-tool to blink a RGB LED, providing
-# a visual indication of the website's status:
+# It will then send a message to Slack (via webhook) telling you either:
 #
-# Green = website is up and running
-# Red = website is not working properly
+# "Google is up and running"
+# "Google is offline!"
 #
 # More on HTTP status codes found here: https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 #
