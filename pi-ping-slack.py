@@ -31,12 +31,17 @@ wait = 1800
 # Replace with your incoming webhook URL generated in Slack
 webhook = 'YOUR_SLACK_INCOMING_WEBHOOK'
 
+# Colour for "OK" message
+ok = "#74a727"
+
+# Colour for "Uh oh!" message
+warn = "#971a1a"
 
 def ping():
   while True:
     response = requests.get(website)
-    dataup = '{"text":"'+sitename+' is up and running"}'
-    datadown = '{"text":"'+sitename+' is offline!"}'
+    dataup = '{"attachments":[{"fallback":"'+sitename+' is up and running.","pretext":"'+sitename+' is up and running.","color":"'+ok+''","fields":[{"title":"OK","value":"'+sitename+' is up and running.","short":false}]}]}'
+    datadown = '{"attachments":[{"fallback":"'+sitename+' is offline!","pretext":"'+sitename+' is offline!.","color":"'+warn+''","fields":[{"title":"Uh oh!","value":"'+sitename+' is offline!","short":false}]}]}'
     requp = urllib2.Request(webhook, dataup, {'Content-Type': 'application/json'})
     reqdown = urllib2.Request(webhook, datadown, {'Content-Type': 'application/json'})
 
