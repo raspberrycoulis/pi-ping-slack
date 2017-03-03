@@ -31,16 +31,16 @@ This is the website you want to check the status of. Replace `https://www.google
 The name of the website - this will form part of the Slack message and is really a vanity variable, but it's nice to use!
 
 #### wait
-The time to wait between status checks in seconds. By *default this is set to 1800 seconds (which is 30 minutes)*, but you can adjust this if you prefer.
+The time to wait between status checks in seconds. By **default this is set to 1800 seconds (which is 30 minutes)**, but you can adjust this if you prefer.
 
 #### webhook
 This will be your Slack incoming webhook - you can get a full walkthrough of this via [Slack's documentation](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks "Slack Incoming Webhooks").
 
 #### ok
-This is the colour displayed in the Slack message for your "OK" message - i.e the website is up and running. Define a custom colour using any colour hex code. *Default is #74a727* (Raspberry Pi Green).
+This is the colour displayed in the Slack message for your "OK" message - i.e the website is up and running. Define a custom colour using any colour hex code. **Default is #74a727** (Raspberry Pi Green).
 
 #### warn
-This is the colour displayed in the Slack message for your "Uh oh!" message - i.e the website is offline. Define a custom colour using any colour hex code. *Default is #971a1a* (Raspberry Coulis Red).
+This is the colour displayed in the Slack message for your "Uh oh!" message - i.e the website is offline. Define a custom colour using any colour hex code. **Default is #971a1a** (Raspberry Coulis Red).
 
 Before running the script, make sure it is executable by running (assuming you have cloned this in your home directory):
 
