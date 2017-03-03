@@ -51,7 +51,9 @@ Test out the script by running:
 
     $ ./pi-ping-slack.py
 
-If all goes well, you should have a Slack notification.
+If all goes well, you should have a Slack notification that looks like this:
+
+![Pi-Ping Slack](https://github.com/raspberrycoulis/pi-ping-slack/blob/master/images/slack.png "Pi-Ping Slack Message")
 
 ## Running on boot
 The script is set to check the status of your set website every 30 minutes (1800 seconds), but to run this on boot you can do so using `systemd`:
