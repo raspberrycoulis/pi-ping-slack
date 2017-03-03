@@ -36,6 +36,12 @@ The time to wait between status checks in seconds. By default this is set to 180
 #### webhook
 This will be your Slack incoming webhook - you can get a full walkthrough of this via [Slack's documentation](https://slack.com/apps/A0F7XDUAZ-incoming-webhooks "Slack Incoming Webhooks").
 
+#### ok
+This is the colour displayed in the Slack message for your "OK" message - i.e the website is up and running. Define a custom colour using any colour hex code. Default is #74a727 (Raspberry Pi Green).
+
+#### warn
+This is the colour displayed in the Slack message for your "Uh oh!" message - i.e the website is offline. Define a custom colour using any colour hex code. Default is #971a1a (Raspberry Coulis Red).
+
 Before running the script, make sure it is executable by running (assuming you have cloned this in your home directory):
 
     $ cd pi-ping-slack
